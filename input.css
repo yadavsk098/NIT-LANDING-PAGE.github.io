@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Add your custom class for the images */
+.custom-image {
+  width: 1569px;
+  height: 680px;
+  object-fit: cover; /* To maintain aspect ratio */
+}
+
+
 .announcement-ticker ul {
   animation: marquee 15s linear infinite;
 }
