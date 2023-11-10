@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nationla Institute of Technology </title>
+    <link rel="stylesheet" href="output.css">
 </head>
-<body>
+<!-- npx tailwindcss ./src/input.css -o ./output.css --watch -->
+
+
+
+<body class="font-sans">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <a href="#" class="text-2xl font-bold">Your Institute</a>
+            </div>
+            <nav>
+                <a href="#" class="mx-2">About</a>
+                <a href="#" class="mx-2">Courses</a>
+                <a href="#" class="mx-2">Admissions</a>
+                <a href="#" class="mx-2">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">Empowering Education</h1>
+            <p class="text-lg">Transforming minds, shaping futures</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-12">
+        <div class="container mx-auto grid grid-cols-2 gap-8">
+            <div>
+                <h2 class="text-3xl font-bold mb-4">About Us</h2>
+                <p class="text-lg">Your institute's brief description goes here.</p>
+                <a href="#" class="inline-block bg-blue-600 text-white py-2 px-4 mt-4 rounded-lg">Learn More</a>
+            </div>
+            <div>
+                <img src="path/to/image.jpg" alt="About Us Image" class="rounded-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Sections -->
+
+    <!-- Include other sections like courses, facilities, testimonials, contact, etc., using a similar structure. -->
+
+    <footer class="bg-gray-900 text-white py-4 text-center">
+        <p>&copy; 2023 Your Institute. All rights reserved.</p>
+    </footer>
+
+
     
 </body>
 </html>
