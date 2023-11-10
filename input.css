@@ -3,10 +3,15 @@
 @tailwind utilities;
 
 /* Add your custom class for the images */
-.custom-image {
-  width: 1569px;
-  height: 680px;
-  object-fit: cover; /* To maintain aspect ratio */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-image {
+  max-width: 100%; /* Ensures the image doesn't exceed the container */
+  height: auto; /* Allows the image to maintain its aspect ratio */
 }
 
 

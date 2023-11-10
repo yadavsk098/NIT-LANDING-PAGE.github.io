@@ -614,8 +614,28 @@ video {
   display: grid;
 }
 
+.h-px {
+  height: 1px;
+}
+
+.h-80 {
+  height: 20rem;
+}
+
+.h-9 {
+  height: 2.25rem;
+}
+
 .w-1\/3 {
   width: 33.333333%;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .grid-cols-2 {
@@ -764,14 +784,27 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 /* Add your custom class for the images */
 
-.custom-image {
-  width: 1569px;
-  height: 680px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  /* To maintain aspect ratio */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-image {
+  max-width: 100%;
+  /* Ensures the image doesn't exceed the container */
+  height: auto;
+  /* Allows the image to maintain its aspect ratio */
 }
 
 .announcement-ticker ul {
