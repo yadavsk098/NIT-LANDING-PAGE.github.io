@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 /* Add your custom class for the images */
+
+im{
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -27,3 +34,20 @@
     transform: translateY(-100%);
   }
 }
+
+
+/* login box  */
+
+  .glow-border {
+    animation: glowing-border 1500ms infinite alternate;
+  }
+
+  @keyframes glowing-border {
+    from {
+      box-shadow: 0 0 5px #F26419;
+    }
+    to {
+      box-shadow: 0 0 20px #007cf0;
+    }
+  }
+
